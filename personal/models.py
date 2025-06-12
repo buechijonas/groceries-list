@@ -116,7 +116,7 @@ class Task(models.Model):
     text = models.CharField(verbose_name=_("Titel"), max_length=50)
     status = models.BooleanField(
         verbose_name=_("Status"),
-        default="false",
+        default=False,
     )
 
     owner = models.ForeignKey(
